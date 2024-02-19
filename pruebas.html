@@ -1,0 +1,48 @@
+DOCTYPE html>
+<html>
+<head>
+  <title>Lámpara</title>
+  <style>
+    #lamp {
+      width: 150px;
+      height: 150px;
+      background-color: #FDD835;
+      border-radius: 50%;
+    }
+    #bulb {
+      width: 50px;
+      height: 50px;
+      background-color: #FFF;
+      border-radius: 50%;
+      margin: 50px auto;
+    }
+    #switch {
+      margin-top: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="lamp">
+    <div id="bulb"></div>
+  </div>
+
+  <div id="switch">
+    <button onclick="toggleLight()">Encender/Apagar</button>
+  </div>
+
+  <script>
+    function toggleLight() {
+      var bulb = document.getElementById("bulb");
+
+      if (bulb.style.backgroundColor === "yellow") {
+        bulb.style.backgroundColor = "#FFF";
+        bulb.style.boxShadow = "none";
+      } else {
+        bulb.style.backgroundColor = "yellow";
+        bulb.style.boxShadow = "0 0 10px 3px yellow";
+      }
+    }
+  </script>
+</body>
+</html>

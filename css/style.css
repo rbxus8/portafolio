@@ -1,19 +1,169 @@
-*{
-    text-decoration: none;
-    list-style: none;
-    margin: 0;
-    box-sizing: border-box;
+:root {
+  --luffy-rojo: #E60012;    /* Color principal: botones, encabezados, elementos llamativos */
+  --luffy-amarillo: #FFD700; /* Color de acento: íconos, subrayados, highlights */
+  --luffy-beige: #FFF3C2;    /* Fondo suave para secciones */
+  --luffy-negro: #000000;    /* Texto o bordes contrastantes */
+  --luffy-marron: #C49E63;   /* Fondo de tarjetas o footer */
+}
+
+
+
+
+* {
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /*=========body==========*/
-body{
-    background-color: rgb(185, 134, 67);
-    height: 100%;
-    width: 100%;
+body {
+  background-color: rgb(185, 134, 67);
+  display: grid;
+  height: 100vh;
+  grid-template-areas: "header"
+                       "main"
+                       "footer"
+  ;
+grid-template-rows: 1fr 8fr 1fr;
 }
 
-/*=========header==========*/
+/*===========header============*/
+header{
+    grid-area: header;
+    background-image:url(../img/barcoheade.png) ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #000000;
+    padding: 5px;
 
+}
+header ul{
+    display: flex;
+    gap: 10px;
+}
 
+li a:hover{
+    background-color: aquamarine;
+}
+
+header input{
+    display: none;
+}
+
+@media (max-width:800px){
+    nav ul li{
+        display: none;
+    }
+}
+
+/*=========main==========*/
+main{
+    grid-area: main;
+    background-color: aquamarine;
+}
 
 /*=========footer==========*/
+footer{
+    grid-area: footer;
+    background-color: aqua;
+    height: 10vh;
+}
+
+/*=========botones==========*/
+
+.btn{
+    background-color: var(--luffy-rojo);
+    padding: 8px;
+    border-radius: 60%;
+}
+
+/*=========links==========*/
+
+a{
+    color: #000;
+}
+
+/*=========texto==========*/
+
+h1 {
+    font-family: 'Pirata One', 'Arial Black', Arial, sans-serif;
+    color: var(--luffy-rojo);
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 0 var(--luffy-negro), 4px 4px 8px var(--luffy-amarillo, #FFD700);
+}
+
+h2 {
+    font-family: 'Pirata One', 'Arial', sans-serif;
+    color: var(--luffy-amarillo);
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 0 var(--luffy-negro);
+}
+
+h3 {
+    font-family: 'Pirata One', 'Verdana', sans-serif;
+    color: var(--luffy-marron);
+    text-shadow: 1px 1px 0 var(--luffy-beige);
+}
+
+h4 {
+    font-family: 'Pirata One', 'Tahoma', sans-serif;
+    color: var(--luffy-negro);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h5 {
+    font-family: 'Georgia', serif;
+    color: var(--luffy-beige);
+    background-color: var(--luffy-marron);
+    padding: 2px 8px;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+h6 {
+    font-family: 'Courier New', Courier, monospace;
+    color: #333;
+    font-style: italic;
+    letter-spacing: 0.5px;
+}
+
+p {
+    font-family: 'Pirata One', 'Arial', sans-serif;
+    color: var(--luffy-negro);
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+
+
+
+/*=========portada==========*/
+.portada{
+    background-image:url(../img/d9e597ce9e2ebce0dba3a0ff60918d1d.jpg) ;
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+    min-width: 320px;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+.imagen_cont{
+    height: 100%;
+    align-items: center;
+    display: flex;
+}
+
+.sobre_mi > h1,p,h2{
+    font-size: 100%;
+}
+

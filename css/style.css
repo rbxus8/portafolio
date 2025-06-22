@@ -18,8 +18,8 @@
 
 /*=========body==========*/
 body {
-  background-color: rgb(185, 134, 67);
-  display: grid;
+    background-color: var(--luffy-marron);
+    display: grid;
   height: 100vh;
   grid-template-areas: "header"
                        "main"
@@ -83,7 +83,8 @@ header input{
 /*=========main==========*/
 main{
     grid-area: main;
-    background-color: aquamarine;
+    background-color: rgba(127, 255, 212, 0);
+    
 }
 
 /*=========footer==========*/
@@ -214,3 +215,28 @@ p {
     cursor: pointer;
 }
 
+/*=========habilidades==========*/
+
+.habilidades{
+  height: 90vh;
+  background-image: url(../img/fondosunny.jpg) ;
+      background-repeat: no-repeat;
+    background-size: cover;
+        background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+
+}
+
+.habilidades div{
+    background-color: rgba(255, 255, 255, 0.66);
+    border-radius: 10px;
+    width: 80%;
+    height: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}

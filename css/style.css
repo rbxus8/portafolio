@@ -67,6 +67,9 @@ header input{
         text-align: center;
         gap: 0;
     }
+    .imagen_cont{
+        margin-top: 150px;
+    }
     .sobre_mi{
         background-image:url(../img/fondomadera.png) ;
         width: 100%;
@@ -76,6 +79,9 @@ header input{
         border-style: solid;
         padding-top: 15px;
         
+    }
+    .habilidades{
+        margin-top: 100px;
     }
 
 }
@@ -177,13 +183,14 @@ p {
     align-items: center;
     justify-content: center;
     gap: 30px;
+    
 }
 
 .portada::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(48, 27, 27, 0.477);
+    background: rgba(90, 27, 27, 0.087);
     z-index: -1;
     pointer-events: none;
 }
@@ -199,9 +206,7 @@ p {
     display: flex;
 }
 
-.sobre_mi > h1,p,h2{
-    font-size: 100%;
-}
+
 
 .redes{
     display: flex;
@@ -218,7 +223,7 @@ p {
 /*=========habilidades==========*/
 
 .habilidades{
-  height: 90vh;
+  height: 120vh;
   background-image: url(../img/fondosunny.jpg) ;
       background-repeat: no-repeat;
     background-size: cover;
@@ -226,12 +231,14 @@ p {
     background-size: cover;
     display: flex;
     justify-content: center;
-    padding-top: 50px;
+    align-items: center;
+    padding-top: 140px;
 
 }
 
 .habilidades div{
-    background-color: rgba(255, 255, 255, 0.66);
+    background-image:url(../img/mapa.png) ;
+    background-size: 100% 100%;
     border-radius: 10px;
     width: 80%;
     height: 95%;
@@ -239,4 +246,25 @@ p {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+
+}
+
+.mapa {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.fondo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: 0;
+}
+
+.isla {
+  position: absolute;
+  width: 80px;
+  z-index: 1;
 }

@@ -1,12 +1,12 @@
 window.addEventListener("load", () => {
   const conexiones = [
     ["isla1", "isla2"],
-    ["isla2", "isla3"],
-    ["isla3", "isla5"],
-    ["isla4", "isla6"],
-    ["isla6", "isla7"],
-    ["isla8", "isla9"],
-    ["isla10", "isla12"]
+    ["isla1", "isla3"],
+    ["isla3", "isla4"],
+    ["isla3", "isla6"],
+    ["isla2", "isla6"],
+    ["isla4", "isla5"],
+
   ];
 
   conexiones.forEach(([origen, destino]) => {

@@ -4,8 +4,13 @@ window.addEventListener("load", () => {
     ["isla1", "isla3"],
     ["isla3", "isla4"],
     ["isla3", "isla6"],
+    ["isla3", "isla8"],
     ["isla2", "isla6"],
     ["isla4", "isla5"],
+    ["isla5", "isla7"],
+    ["isla6", "isla7"],
+    ["isla8", "isla9"],
+        ["isla9", "isla10"],
 
   ];
 

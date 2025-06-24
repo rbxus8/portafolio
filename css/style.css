@@ -115,7 +115,7 @@ main{
 /*=========footer==========*/
 footer{
     grid-area: footer;
-    background-color: aqua;
+    background-color: rgba(0, 0, 0, 0.584);
     height: 10vh;
 }
 
@@ -281,76 +281,120 @@ p {
 =========*/
 
 .habilidades{
-  height: 100vh;
-  background-image: url(../img/fondonubes.jpg) ;
-      background-repeat: no-repeat;
-    background-size: cover;
-        background-position: center;
+    height: 110vh;
+    background-image: url(../img/fondonubes.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 140px;
-    
+    padding-bottom: 100px;
+    position: relative;
+        flex-direction: column;
 
+    
 }
 
 .habilidades div{
     background-image:url(../img/mapa.png) ;
     background-size: 100% 100%;
+    background-repeat: no-repeat;
     border-radius: 10px;
     width: 80%;
     height: 95%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
-        border: #000;
+    align-items: center;
+    position: relative; /* Necesario para posicionar las islas dentro */
+    border: #000;
     border-style: solid;
     box-shadow: 0 0 10px rgb(0, 0, 0);
     object-fit: cover;
-
 }
 
 .mapa {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    
 }
 
 .icon_sunny {
-  position: absolute;
-  width: fit-content;
-  height: 30%;
-  z-index: 2;
-  cursor: pointer;
-  top: -15%;
-}
+    position: absolute;
+    width: fit-content;
+    height: 30%;
+    cursor: pointer;
+    z-index: 100;
+    top: 20px;
 
-.fondo {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  z-index: 0;
 }
 
 .isla {
-  position: absolute;
-  width: 80px;
-  z-index: 1;
-  cursor: pointer;
+    position: absolute;
+    width: 80px;
+    z-index: 1;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* Centra la isla en el mapa, ajusta left/top para otras posiciones */
+    max-width: calc(100% - 20px);
+    max-height: calc(100% - 20px);
+    box-sizing: border-box;
 }
+.isla:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+/* --- Evita que las islas se sobrepongan en pantallas pequeñas --- */
+@media (max-width: 900px) {
+    .habilidades div {
+        width: 98%;
+        height: 80%;
+    }
+    .isla {
+        width: 60px;
+        max-width: 60px;
+    }
+}
+@media (max-width: 600px) {
+    .habilidades {
+        padding-top: 60px;
+        padding-bottom: 40px;
+        height: auto;
+    }
+    .habilidades div {
+        width: 100%;
+        height: 60vw;
+        min-height: 220px;
+        max-height: 320px;
+    }
+    .isla {
+        width: 40px;
+        max-width: 40px;
+    }
+}
+
+/* Opcional: si tienes varias islas, usa clases extra para posicionarlas separadas */
+.isla.isla1 { left: 30%; top: 40%; }
+.isla.isla2 { left: 60%; top: 35%; }
+.isla.isla3 { left: 45%; top: 65%; }
+.isla.isla4 { left: 70%; top: 60%; }
+/* Ajusta los valores de left/top según la cantidad y distribución de islas */
+
 
 
 /*=========proyectos==========*/
 
 .proyectos{
-    height: 120vh;
+    height: 100vh;
     width: 100%;
-    background-image:url(../img/fondopiratas.jpg) ;
+    background-image:url(../img/one-piece-logo_3840x2160_xtrafondos.com.jpg) ;
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -365,8 +409,8 @@ p {
 
 .proyectos_contenedor{
     text-align: center;
-    height: 40%;
-    width: 80%;
+    height: 80%;
+    width: 60%;
     display: grid;
     grid-template-areas:
         "list_proyectos ventana_demos"
@@ -448,3 +492,47 @@ background-color: #fff;
 }
 
 
+/*=========contactos==========*/
+
+.contactos{
+    height: 100vh;
+    width: 100%;
+        background-image:url(../img/Diseñosintítulo.gif) ;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 100px;
+}
+
+.contactos form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.contactos form input, .contactos textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid var(--luffy-marron);
+    background-color: rgba(255, 255, 255, 0.8);
+    font-family: 'Pirata One', 'Arial', sans-serif;
+}
+
+.contactos button {
+    background-color: var(--luffy-rojo);
+    color: var(--luffy-beige);
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Pirata One', 'Arial', sans-serif;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.contactos button:hover {
+    background-color: var(--luffy-amarillo);
+    color

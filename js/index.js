@@ -28,3 +28,40 @@ window.addEventListener("load", () => {
     );
   });
 });
+
+// Function to toggle the visibility of the boat info
+
+function mostrardatosB1() {
+  const info = document.querySelector('.info_mapa');
+  const barco1 = document.getElementById('barco1');
+
+  if (info && barco1) {
+    info.style.display = 'flex';
+    info.style.transition = 'opacity 0.5s ease-in-out';
+  }
+}
+
+function ocultardatosB1() {
+  const info = document.querySelector('.info_mapa');
+  if (info) {
+    info.style.display = 'none';
+  }
+}
+
+
+function mostrardatosB2() {
+  const info = document.querySelector('.mapa');
+  const barco2 = document.getElementById('barco2');
+
+  if (info && barco2) {
+    info.style.display = 'flex';
+    info.style.transition = 'opacity 0.5s ease-in-out';
+  }
+}
+
+function ocultardatosB2() {
+  const info = document.querySelector('.mapa');
+  if (info) {
+    info.style.display = 'none';
+  }
+}

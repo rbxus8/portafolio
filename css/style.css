@@ -111,7 +111,7 @@ header input{
         flex-direction: column !important; 
         align-items: center;
         gap: 10%;
-        height: 150vh !important;
+        height: 400vh !important;
         }
 
     .proyectos_contenedor{
@@ -318,16 +318,16 @@ p {
 /*=========habilidades==========*/
 
 .habilidades{
-    height: 200vh;
+    height: 140vh;
     width: 100%;
-    background-image: url(../img/fondonubes.jpg) ;
+    background-image: url(../img/promise.jpeg) ;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     justify-items: center;
+    text-align: center;
 }
 
 .habilidades_contenedor{
@@ -346,8 +346,8 @@ p {
 .info_mapa{
     position: relative;
     background-image:url(../img/mapa.png) ;
-    width: 90%;
-    height: 200px;
+    width: 40vw;
+    height: 400px;
     background-size: 100% 100%;
     border-radius: 10px;
     border: #000;
@@ -369,7 +369,7 @@ p {
     background-image:url(../img/mapa.png) ;
     background-size: 100% 100%;
     border-radius: 10px;
-    width: 800px;
+    width: 40vw;
     height: 400px;
     display: none;
     justify-content: center;

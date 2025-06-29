@@ -1,4 +1,13 @@
-window.addEventListener("load", () => {
+/*
+// Espera a que el DOM esté completamente cargado antes de ejecutar el código
+window.addEventListener("DOMContentLoaded", () => {
+  // Verifica que la librería LeaderLine esté cargada
+  if (typeof LeaderLine === "undefined") {
+    console.error("LeaderLine library not loaded.");
+    return;
+  }
+
+  // Define las conexiones entre las islas por sus IDs
   const conexiones = [
     ["isla1", "isla2"],
     ["isla1", "isla3"],
@@ -10,24 +19,29 @@ window.addEventListener("load", () => {
     ["isla5", "isla7"],
     ["isla6", "isla7"],
     ["isla8", "isla9"],
-        ["isla9", "isla10"],
-
+    ["isla9", "isla10"],
   ];
 
+  // Recorre cada conexión y dibuja una línea entre los elementos correspondientes
   conexiones.forEach(([origen, destino]) => {
-    new LeaderLine(
-      document.getElementById(origen),
-      document.getElementById(destino),
-      {
-        color: 'brown',
-        size: 3,
-        path: 'straight',
-        startPlug: 'disc',
-        endPlug: 'arrow3'
-      }
-    );
+    const origenElem = document.getElementById(origen);
+    const destinoElem = document.getElementById(destino);
+    if (origenElem && destinoElem) {
+      new LeaderLine(
+        origenElem,
+        destinoElem,
+        {
+          color: 'brown',      // Color de la línea
+          size: 3,             // Grosor de la línea
+          path: 'straight',    // Tipo de línea (recta)
+          startPlug: 'disc',   // Forma del inicio de la línea
+          endPlug: 'arrow3'    // Forma del final de la línea
+        }
+      );
+    }
   });
 });
+*/
 
 // Function to toggle the visibility of the boat info
 

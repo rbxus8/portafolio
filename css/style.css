@@ -18,7 +18,12 @@
 
 /*=========body==========*/
 body {
-    background-color: rgba(0, 0, 0, 0.584);
+    background-image: url(../img/promise.jpeg) ;
+        background-image: url(../img/promise.jpeg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; /* Evita que el fondo se mueva al hacer scroll */
     display: grid;
   height: 100vh;
   grid-template-areas: "header"
@@ -100,6 +105,7 @@ header input{
         {
             margin-top: 110px;
             height: 80vh !important;
+
         }
     
         .proyectos{
@@ -110,18 +116,16 @@ header input{
         display: flex !important;
         flex-direction: column !important; 
         align-items: center;
+        justify-content: center;
         gap: 10%;
-        height: 400vh !important;
-        }
+        height: 250vh !important;
+            }
 
-    .proyectos_contenedor{
-        grid-template-areas: "list_proyectos list_proyectos"
-        "ventana_demos ventana_demos"
-        "desc_proyecto desc_proyecto" !important;
-        grid-template-rows: 1fr 3fr 2fr !important;
-        width: 90% !important;
-
+    .proyectos{
+        height: 300vh !important;
+        clip-path: none !important;
     }
+    
     .list_proyectos{
         flex-direction: row !important;
         overflow-x: scroll  !important;
@@ -132,10 +136,28 @@ header input{
 
     }
 
-    
-    
-
 }
+
+@media (max-height:600px){
+
+    .sobremi_contenido{               
+             min-height: 150vh !important;
+    }
+    .habilidades{
+                height: 350vh !important;
+    }
+
+    .proyectos{
+                min-height: 450vh !important;
+    }
+    .proyectos_contenedor{
+        height: 400vh !important;
+    }
+    .contactos{
+        min-height: 250vh !important;
+    }
+}
+
 
 /*=========main==========*/
 main{
@@ -318,13 +340,14 @@ p {
 .habilidades{
     height: 140vh;
     width: 100%;
-    background-image: url(../img/promise.jpeg) ;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed; /* Evita que el fondo se mueva al hacer scroll */
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
+    align-items: center;
     text-align: center;
 }
 
@@ -333,6 +356,15 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.habilidades_contenedor_1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
 }
 
 
@@ -410,7 +442,7 @@ p {
 .proyectos{
     height: 140vh;
     width: 100%;
-    background-image:url(../img/one-piece-logo_3840x2160_xtrafondos.com.jpg) ;
+    background-image: url(../img/one-piece-logo_3840x2160_xtrafondos.com.jpg);
     background-size: cover;
     background-position: bottom;
     display: flex;
@@ -418,7 +450,8 @@ p {
     flex-direction: column;
     gap: 30px;
     padding-top: 100px;
-
+    position: relative;
+  clip-path: ellipse(100% 100% at 50% 100%);    background-color: transparent;
 }
 
 

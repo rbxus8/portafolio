@@ -14,6 +14,7 @@
   list-style: none;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /*=========body==========*/
@@ -35,55 +36,84 @@ min-width: 360px;
 }
 
 /*===========header============*/
-header{
-    grid-area: header;
-    background-image:url(../img/barcoheade.png) ;
+
+
+
+
+.container {
+    margin: 0 auto;
+}
+
+.menu{
+    position: absolute;
     display: flex;
-    justify-content: space-around;
+    top: 0;
+    left: 0;
+    right: 0;
     align-items: center;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #000000;
-    padding: 5px;
-    border-bottom: #000000;
-    border-bottom-style: solid;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 1000;
+    background-color: #1d1d1d;
+    background-size: cover;
+    border-bottom: #1d1d1d;
+    border-style: solid;
     position: fixed;
-    z-index: 1000  ;
-    width: 100%;
 }
 
-header ul{
-    display: flex;
-    gap: 10px;
+.menu .navbar ul li {
+    position: relative;
+    float: left;
 }
 
-header ul li{
-    list-style: none;
-    font-family: 'Pirata One', 'Arial', sans-serif;
-    color: var(--luffy-beige);
-    padding: 4px 8px;
-    border-radius: 8px;
-    transition: background 0.2s, color 0.2s;
+.menu .navbar ul li a{
+    font-size: 14px;
+    padding: 20px;
+    display: block;
+    color: rgb(255, 255, 255);
+}
+.menu .navbar ul li a:hover{
+    color: #15617f;
 }
 
-li a:hover {
-    background-color: rgba(0, 80, 180, 0.85); /* azul intenso y semitransparente */
-    color: var(--luffy-amarillo);
-    border-radius: 8px;
-    padding: 4px 12px;
-    transition: background 0.2s, color 0.2s;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-}
-
-header input{
+#menu{
     display: none;
 }
 
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+
+
 @media (max-width:800px) {
-    nav ul li{
-        display: none;
-    }
     
+    .menu label{
+        display: initial;
+    }
+
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #37322a;
+        display: none;
+        text-align: center;
+    }
+    .menu .navbar ul li{
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+
+
     .portada {
         flex-direction: column;
         text-align: center;
@@ -194,34 +224,34 @@ a{
 /*=========texto==========*/
 
 h1 {
-    font-family: 'Pirata One', 'Arial Black', Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: var(--luffy-rojo);
     letter-spacing: 2px;
     text-shadow: 2px 2px 0 var(--luffy-negro), 4px 4px 8px var(--luffy-amarillo, #FFD700);
 }
 
 h2 {
-    font-family: 'Pirata One', 'Arial', sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: var(--luffy-amarillo);
     letter-spacing: 1px;
     text-shadow: 1px 1px 0 var(--luffy-negro);
 }
 
 h3 {
-    font-family: 'Pirata One', 'Verdana', sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: var(--luffy-marron);
     text-shadow: 1px 1px 0 var(--luffy-beige);
 }
 
 h4 {
-    font-family: 'Pirata One', 'Tahoma', sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: var(--luffy-negro);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
 h5 {
-    font-family: 'Georgia', serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: var(--luffy-beige);
     background-color: var(--luffy-marron);
     padding: 2px 8px;
@@ -230,15 +260,17 @@ h5 {
 }
 
 h6 {
-    font-family: 'Courier New', Courier, monospace;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #333;
     font-style: italic;
     letter-spacing: 0.5px;
 }
 
 p {
-    font-family: 'Pirata One', 'Arial', sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
+        text-shadow: 1px 1px 0 var(--luffy-negro);
+
     font-size: 1.1rem;
     line-height: 1.6;
 }

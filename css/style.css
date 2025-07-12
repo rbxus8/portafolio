@@ -325,6 +325,7 @@ p {
 .sobre_mi{
     text-align: center;
     align-items: center;
+    
 }
 
 .sobremi_contenido{
@@ -339,8 +340,11 @@ p {
     justify-content: end;
     flex-direction: column;
     padding: 20px;
+    padding-bottom: 80px;
     gap: 20px;
     height: min-content;
+    clip-path: ellipse(100% 100% at 50% 0%);
+
 }
 
 .sobremi_contenido h2{

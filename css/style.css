@@ -492,7 +492,7 @@ p {
     flex-wrap: wrap;
     height: max-content;
     width: 90%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.56);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0,0, 0.1);
     padding: 20px;
@@ -501,8 +501,8 @@ p {
 }
 
 .card{
-    background-color: rgba(11, 9, 9, 0.8);
-    border-radius: 10px;
+    background-color: rgba(11, 9, 9, 0.848);
+    border-radius: 5px;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;

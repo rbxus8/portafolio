@@ -300,20 +300,24 @@
 
       <section class="contactos">
         <h2>contactos</h2>
-        <form action="get">
-          <input placeholder="Nombre" type="nombre" name="" id="" />
-          <input placeholder="Correo" type="email" name="correo" id="" />
-          <input placeholder="Telefono" type="number" name="telefono" id="" />
-          <textarea
-            placeholder="motivo"
-            name="mensaje"
-            id=""
-            cols="30"
-            rows="10"
-          ></textarea>
-          <button type="submit">Enviar</button>
-        </form>
-        <div></div>
+<form action="https://formsubmit.co/e4eff6e2944de0e947e5b3dec75bd24a
+" method="POST">
+  <input type="text" name="nombre" placeholder="Tu nombre" required>
+  <input type="email" name="email" placeholder="Tu correo" required>
+  <input type="text" name="telefono" placeholder="Teléfono" required>
+  <textarea name="mensaje" placeholder="Escribe tu mensaje" required></textarea>
+  
+  <!-- Protección antispam -->
+  <input type="text" name="_honey" style="display:none">
+  <input type="hidden" name="_captcha" value="false">
+
+  <!-- Redirección después del envío -->
+  <input type="hidden" name="_next" value="https://tusitio.com/gracias.html">
+
+  <button type="submit">Enviar</button>
+</form>
+
+
       </section>
     </main>
     <footer>

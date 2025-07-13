@@ -53,7 +53,7 @@ min-width: 360px;
     align-items: center;
     justify-content: space-around;
     z-index: 1000;
-background-image:url(../img/barcoheade.png) ;
+    background-image:url(../img/barcoheade.png) ;
     background-size: cover;
     border-bottom: #1d1d1d;
     border-style: solid;
@@ -135,6 +135,8 @@ background-image:url(../img/barcoheade.png) ;
     
         .proyectos{
             height: 150vh !important; 
+            border: none !important;
+            border-radius: 0px !important;
         }
 
         .habilidades{
@@ -377,13 +379,7 @@ p {
     padding: 100px;
 }
 
-.habilidades_contenedor{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-}
+
 
 .habilidades_contenedor_1{
     display: flex;
@@ -423,6 +419,7 @@ p {
     width: 80%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .skill_cont h3 {
@@ -447,15 +444,16 @@ p {
     background-size: 100% 100%;
     border-radius: 10px;
     width: 40vw;
-    height: 400px;
-    display: none;
+    min-height: 400px;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
     align-items: center;
     border: #000;
     border-style: solid;
     box-shadow: 0 0 10px rgb(0, 0, 0);
-    overflow: hidden;
+
 }
 
 .mapa img {
@@ -467,21 +465,30 @@ p {
 
 /*=========proyectos==========*/
 
-.proyectos{
-    height: 160vh;
-    min-height: min-content;
-    width: 100%;
-    background-image: url(../img/fondosunny.jpg);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 30px;
-    padding-top: 200px;
-    padding-bottom: 10px;
-  clip-path: ellipse(100% 100% at 50% 100%);
+.proyectos {
+  height: 160vh;
+  min-height: min-content;
+  width: 100%;
+  background-image: url(../img/fondosunny.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 200px;
+  padding-bottom: 10px;
+
+  /* Borde visible */
+  border-top: 40px  rgb(255, 253, 253);
+  border-style: ridge;
+  
+
+  /* Curvas en la parte superior */
+  border-top-left-radius: 40% 250px ;
+  border-top-right-radius: 40% 250px;
 }
+
 
 .proyectos h2{
     font-size: 2.5rem;

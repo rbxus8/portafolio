@@ -8,6 +8,10 @@
 
 
 
+html{
+     scroll-behavior: smooth;
+       scroll-padding-top: 80px; /* altura de tu header fijo */
+}
 
 * {
   text-decoration: none;
@@ -16,6 +20,7 @@
   box-sizing: border-box;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 
 /*=========body==========*/
 body {
@@ -53,7 +58,7 @@ min-width: 360px;
     align-items: center;
     justify-content: space-around;
     z-index: 1000;
-    background-image:url(../img/barcoheade.png) ;
+    background-color: #000000f3;
     background-size: cover;
     border-bottom: #1d1d1d;
     border-style: solid;
@@ -90,6 +95,11 @@ min-width: 360px;
 
 
 @media (max-width:800px) {
+
+    .menu{
+        justify-content: space-between;
+        padding-inline: 30px;
+    }
     
     .menu label{
         display: initial;
@@ -100,7 +110,7 @@ min-width: 360px;
         top: 100%;
         left: 0;
         right: 0;
-        background-color: #37322a;
+        background-color: #000000;
         display: none;
         text-align: center;
     }
@@ -118,19 +128,15 @@ min-width: 360px;
         flex-direction: column;
     }
 
-    .sobre_mi{
-        background-image:url(../img/fondomadera.png) ;
-        background-color: #00000029;
-        width: 100%;
-        background-size: cover;
-        border-color: #000;
-        border-style: solid;
-        padding-top: 15px;
-    }
+
 
     .imagen_cont img{
         max-height: 50%;
         position: absolute;
+    }
+
+    .sobre_mi{
+    height: 50%;
     }
     
         .proyectos{
@@ -285,6 +291,12 @@ p {
     height: 80%;
 }
 
+.sobre_mi{
+    text-align: center;
+    align-items: center;
+    
+}
+
 .redes {
     display: flex;
     justify-content: center;
@@ -324,15 +336,11 @@ p {
 
 /*=========sobremi_contenido=========*/
 
-.sobre_mi{
-    text-align: center;
-    align-items: center;
-    
-}
+
 
 .sobremi_contenido{
     width: 100%;
-    background-image:url(../img/ponegilphfondo.jpg) ;
+    background-image:url(../img/fondomadera.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;    
@@ -356,6 +364,7 @@ p {
 }
 
 .sobremi_contenido p{
+    color: white;
     width: 90%;
 }
 
@@ -548,7 +557,9 @@ p {
     height: 100vh;
     min-height: min-content;
     width: 100%;
-        background-image:url(../img/Diseñosintítulo.gif) ;
+    background-image: url(../img/ponegilphfondo.jpg);
+    background-image: 100% 100%;
+    background-color: #000000;
     background-size: cover;
     background-position: bottom;
     display: flex;

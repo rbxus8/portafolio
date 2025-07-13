@@ -79,3 +79,4 @@ function ocultardatosB2() {
     info.style.display = 'none';
   }
 }
+

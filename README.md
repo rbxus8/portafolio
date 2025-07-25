@@ -4,18 +4,13 @@ Bienvenido a mi portafolio web personal inspirado en el mundo de **One Piece**, 
 
 ## 📜 Descripción
 
-Este sitio web es una presentación visual e interactiva de mis habilidades y proyectos, simulando un viaje entre islas que representan tecnologías y conocimientos adquiridos. La estética está inspirada en el universo de **One Piece**, buscando reflejar creatividad, aventura y aprendizaje constante.
+Este sitio web es una presentación visual e interactiva de mis habilidades y proyectos. La estética está inspirada en el universo de **One Piece**, buscando reflejar creatividad, aventura y aprendizaje constante, no me quise enfocar en diseños minimalistas y poder romper con mi creatividad en este proyecto. asimismo prometo presentar un proyecto mas estetico sin reducir el diseño actual de la pagina.
 
 ## 🚀 Tecnologías utilizadas
 
 - **HTML5**
 - **CSS3**
 - **JavaScript**
-- **PHP** (en algunos proyectos enlazados)
-- **MySQL** (bases de datos en proyectos backend)
-- Librerías:
-  - [LeaderLine.js](https://anseki.github.io/leader-line/) para conectar visualmente elementos del mapa
-
 
 ## 🌴 Secciones destacadas
 
@@ -25,8 +20,5 @@ Este sitio web es una presentación visual e interactiva de mis habilidades y pr
 - **Proyectos**: Muestra de algunos trabajos con posibilidad de enlace a demos.
 - **Contacto**: Formulario para que visitantes puedan escribirme directamente.
 
+
 ## 📸 Vista previa
-
-![Captura del mapa de habilidades](img/ChatGPT%20Image%2020%20jun%202025,%2022_46_18.png)
-
-

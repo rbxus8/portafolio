@@ -40,13 +40,13 @@
           <img
             src="img/Diseño sin título (2).png"
             alt="imagenwanted"
-            style="height: 80%;"
+            style="height: 80% ;"
           />
           <img
             id="miImagen"
             src="img/ChatGPT Image 20 jun 2025, 22_46_18.png"
             alt=""
-            style="position: absolute; height: 80%; cursor: pointer"
+            style="position: absolute; height: 80%; max-height: 550px; cursor: pointer"
             onmouseover="this.style.opacity='0';"
             onmouseout="this.style.opacity='1';"
           />
@@ -115,117 +115,70 @@
         </p>
       </section>
 
-      <section id="habilidades" class="habilidades">
-        <div class="habilidades_contenedor_1">
-          <h1>Lenguajes que manejo</h1>
-          <!------- imagen de barco superior------->
-          <img
-            onmouseover="mostrardatosB1()"
-            onmouseout="ocultardatosB1()"
-            id="barco1"
-            src="img/fila-1-columna-1.png"
-            alt="barco1"
-            style="height: 200px"
-          />
-          <div
-            onmouseover="mostrardatosB1()"
-            onmouseout="ocultardatosB1()"
-            class="info_mapa"
-          >
-            <div class="skill_cont">
-              <h3>HTML</h3>
-              <div class="barra">
-                <div
-                  class="progress"
-                  style="height: 100%; background-color: brown; width: 90%"
-                ></div>
-              </div>
-            </div>
-            <div class="skill_cont">
-              <h3>CSS</h3>
-              <div class="barra">
-                <div
-                  class="progress"
-                  style="height: 100%; background-color: brown; width: 90%"
-                ></div>
-              </div>
-            </div>
-            <div class="skill_cont">
-              <h3>JavaScript</h3>
-              <div class="barra">
-                <div
-                  class="progress"
-                  style="height: 100%; background-color: brown; width: 90%"
-                ></div>
-              </div>
-            </div>
-            <div class="skill_cont">
-              <h3>PHP</h3>
-              <div class="barra">
-                <div
-                  class="progress"
-                  style="height: 100%; background-color: brown; width: 60%"
-                ></div>
-              </div>
-            </div>
-            <div class="skill_cont">
-              <h3>MySQL</h3>
-              <div class="barra">
-                <div
-                  class="progress"
-                  style="height: 100%; background-color: brown; width: 50%"
-                ></div>
-              </div>
-            </div>
-            <div class="skill_cont">
-              <h3>Java</h3>
-              <div class="barra">
-                <div
-                  class="progress"
-                  style="height: 100%; background-color: brown; width: 40%"
-                ></div>
-              </div>
-            </div>
-          </div>
+<section id="habilidades" class="habilidades-section">
+  <div class="contenedor">
+    <h2 class="titulo">⚓ Habilidades de la Tripulación</h2>
+    <p class="descripcion">Estas son las técnicas del desarrollador que navega los mares del código.</p>
 
-          <!------- imagen de barco inferior------->
-          <img
-            onmouseover="mostrardatosB1()"
-            onmouseout="ocultardatosB1()"
-            id="barco1"
-            src="img/fila-2-columna-1.png"
-            alt="barco1"
-            style="height: 200px"
-          />
-        </div>
+    <div class="cuadricula">
+      
+      <div class="carta carta-amarilla">
+        <h3>🍖 Lenguajes</h3>
+        <ul>
+          <li>JavaScript / TypeScript</li>
+          <li>PHP / SQL</li>
+          <li>C#</li>
+        </ul>
+      </div>
 
-        <div class="habilidades_contenedor_1">
-          <h1>Frameworks y herramientas</h1>
-          <img
-            onmouseover="mostrardatosB2()"
-            onmouseout="ocultardatosB2()"
-            id="barco2"
-            src="img/sunnyfila-1-columna-1.png"
-            alt="barcosunny_superior"
-          />
-          <div
-            onmouseover="mostrardatosB2()"
-            onmouseout="ocultardatosB2()"
-            class="mapa"
-          >
-            <img src="img/islareact.png" alt="" />
-            <img src="img/islalarabel.png" alt="" />
-            <img src="img/isladocker.png" alt="" />
-          </div>
-          <img
-            onmouseover="mostrardatosB2()"
-            onmouseout="ocultardatosB2()"
-            id="barco2"
-            src="img/sunnyfila-2-columna-1.png"
-            alt="barcosunny_inferior"
-          />
-        </div>
-      </section>
+      <div class="carta carta-roja">
+        <h3>🏴 Desarrollo Web</h3>
+        <ul>
+          <li>HTML5, CSS3</li>
+          <li>React, Node.js</li>
+          <li>APIs REST</li>
+        </ul>
+      </div>
+
+      <div class="carta carta-azul">
+        <h3>📚 Bases de Datos</h3>
+        <ul>
+          <li>MySQL, PostgreSQL</li>
+        </ul>
+      </div>
+
+      <div class="carta carta-verde">
+        <h3>⚙️ Herramientas</h3>
+        <ul>
+          <li>Git, GitHub</li>
+          <li>Docker</li>
+
+        </ul>
+      </div>
+
+      <div class="carta carta-morada">
+        <h3>💬 Habilidades Blandas</h3>
+        <ul>
+          <li>Trabajo en equipo</li>
+          <li>Resolución de problemas</li>
+          <li>Adaptabilidad</li>
+          <li>Comunicación</li>
+        </ul>
+      </div>
+
+      <div class="carta carta-negra">
+        <h3>🏴‍☠️ Espíritu Pirata</h3>
+        <ul>
+          <li>Valiente ante bugs</li>
+          <li>Busca nuevos desafíos</li>
+          <li>Aprendiz de Rey de los Piratas</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
       <section id="proyectos" class="proyectos">
         <h2>PROYECTOS</h2>
